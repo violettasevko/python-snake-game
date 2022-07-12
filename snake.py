@@ -68,7 +68,7 @@ while key != ESC:
     else:
         # move snake
         last = snake.pop()
-        win.addch(last[0], last[1], '')
+        win.addch(last[0], last[1], ' ')
 
     win.addch(snake[0][0], snake[0][1], '*')
 
