@@ -22,8 +22,8 @@ ESC = 27
 key = curses.KEY_RIGHT
 
 while key != ESC:
-    win.addch(0, 2, 'Score ' + str(score) + ' ')
-    win.timeout(150 - (len(snake)) // len(snake)//10 % 120)    # increase speed
+    win.addstr(0, 2, 'Score ' + str(score) + ' ')
+    win.timeout(150 - (len(snake)) // 5 + len(snake)//10 % 120)    # increase speed
 
     prev_key = key
     event = win.getch()
