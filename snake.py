@@ -1,5 +1,5 @@
 import curses
-from random import randind
+from random import randint
 # setup window
 
 curses.initscr()
