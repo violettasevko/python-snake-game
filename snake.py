@@ -44,9 +44,9 @@ while key != ESC:
     if key == curses.KEY_UP:
         y -= 1
     if key == curses.KEY_LEFT:
-        y -= 1
+        x -= 1
     if key == curses.KEY_RIGHT:
-        y += 1
+        x += 1
 
     snake.insert(0, (y, x))  # append 0(n)
 
