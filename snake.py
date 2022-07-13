@@ -19,10 +19,10 @@ win.addch(food[0], food[1], '#')
 score = 0
 
 ESC = 27
-KEY_RIGHT = 39
-KEY_LEFT = 37
-KEY_UP = 38
-KEY_DOWN = 40
+KEY_RIGHT = 'd'
+KEY_LEFT = 'a'
+KEY_UP = 'w'
+KEY_DOWN = 's'
 key = curses.KEY_RIGHT
 
 while key != ESC:
