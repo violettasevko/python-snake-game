@@ -1,5 +1,5 @@
 import curses
-# from random import randind
+from random import randind
 # setup window
 
 curses.initscr()
@@ -64,8 +64,8 @@ while key != ESC:
         score += 1
         food = ()
         while food == ():
-            # food = (randint(1,18), randint(1,58))
-            food = (8, 8)
+            food = (randint(1,18), randint(1,58))
+            # food = (8, 8)
             if food in snake:
                 food = ()
         win.addch(food[0], food[1], '#')
